@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.swiper-button-prev:after {
+  background: url(../images/Arrow_Left_SM.svg);
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  font-family: swiper-icons;
+  font-size: var(--swiper-navigation-size);
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-next:after {
+  background: url(../images/Arrow_right_SM.svg);
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 35%;
+}
+
+.mySwiper2 .swiper-button-next,
+.mySwiper2 .swiper-button-prev {
+  top: 2%;
+}
+.y-center {
+  display: none;
+}
+.foot-bg {
+  background-size: 100% 100%;
+}
+.blog-swiper .swiper-button-prev {
+  left: 30px;
+}
+
+.blog-swiper .swiper-button-next {
+  right: 30px;
+}
+[type="checkbox"]:checked {
+  border: 1px solid #292d2e;
+  background: url(../images/Check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+}
+select:not([size]) {
+  background: url(../images/Caret_Down.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5em 2.5em;
+  background-position: right;
+}
+@media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 55%;
+  }
+}
+
+@media (max-width: 576px) {
+  .vinyasa .foot-bg {
+    background-size: cover !important;
+    background-position: left;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 54%;
+  }
+
+  .foot-bg {
+    background-size: cover !important;
+    background-position: left left;
+  }
+}
+@media (max-width: 450px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 64%;
+  }
+  select:not([size]) {
+    background-size: 2em 2em;
+  }
+}
