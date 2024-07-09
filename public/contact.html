@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Yoga</title>
+  </head>
+  <body class="relative -z-[9999]">
+    <header class="relative z-[9999]">
+      <nav class="bg-light-1000 relative w-full z-20 top-0 start-0 py-4 border-b border-[#CBD8DB]">
+        <div
+          class="md:max-w-[1408px] relative md:flex-row flex-row-reverse flex flex-wrap items-center justify-between md:mx-auto mr-auto p-4"
+        >
+          <div class="w-full flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 md:order-1 order-2">
+              <img src="images/logo.svg" class="sm:w-auto w-[80px]" alt="" />
+            </a>
+            <a href="#" class="text-black-2000 order-3 text-base font-normal capitalize md:block hidden">Italiano</a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:hidden">
+              <button
+                data-collapse-toggle="navbar-sticky"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-sticky"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img src="images/bars.svg" alt="" />
+              </button>
+            </div>
+            <div class="md:hidden block order-3">
+              <a href="#" class="text-black-2000 text-base font-normal capitalize md:hidden block">Italiano</a>
+            </div>
+            <div
+              class="items-center justify-between hidden md:flex absolute md:after:bg-none after:absolute after:content-[''] after:bg-[url('../images/flowers.svg')] after:bg-no-repeat after:w-[350px] after:h-[400px] after:right-0 after:top-5 after:z-50 md:order-1 bg-transparent text-center md:static md:w-auto left-0 w-full top-[70px]"
+              id="navbar-sticky"
+            >
+              <ul
+                class="flex flex-col relative p-4 md:p-0 md:pt-0 pt-32 mt-4 md:h-auto h-screen font-medium bg-light-1000 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+              >
+                <li class="md:pb-0 pb-10 relative z-[5000]">
+                  <a href="index.html" class="block py-2 px-3 text-black-2000 text-base font-light capitalize active"
+                    >Home</a
+                  >
+                </li>
+                <li class="md:pb-0 pb-10 relative z-[5000]">
+                  <a
+                    href="blog.html"
+                    class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                    >Blog</a
+                  >
+                </li>
+                <li class="md:pb-0 pb-10 relative z-[5000]">
+                  <a
+                    href="contact.html"
+                    class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                    >Contact
+                  </a>
+                </li>
+              </ul>
+              <ul
+                class="flex z-[5000] items-center justify-end sm:pt-0 pt-10 absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-[70%] md:hidden"
+              >
+                <li>
+                  <a href="#"><img src="images/insta.svg" alt="insta" /></a>
+                </li>
+                <li class="ml-6">
+                  <a href="#"><img src="images/facebook.svg" alt="insta" /></a>
+                </li>
+                <li class="ml-6">
+                  <a href="#"><img src="images/linkedin.svg" alt="insta" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="md:pt-20 pt-14 z-[100] bg-light-1000 relative after:absolute after:content-[''] after:bg-[url('../images/flowers.svg')] after:bg-contain after:bg-no-repeat md:after:w-[250px] sm:after:w-[250px] after:w-[150px] md:after:h-[300px] sm:after:h-[300px] after:h-[200px] after:right-5 after:top-5 after:-z-50"
+    >
+      <!-----CONTACT-US-SECTION----->
+      <section>
+        <div class="max-w-[1370px] px-5 mx-auto">
+          <h2
+            class="lg:text-5xl md:text-4xl text-2xl text-black-2000 font-medium lg:leading-[60px] leading-none capitalize sm:pb-12 pb-8"
+          >
+            Contact Us
+          </h2>
+          <div class="flex flex-wrap items-start justify-between">
+            <div class="md:w-1/2 w-full">
+              <img src="images/contact.png" class="xl:max-w-[620px] xl:h-[600px] max-w-full w-full h-full" alt="" />
+            </div>
+            <div class="md:w-1/2 w-full">
+              <div class="lg:max-w-[390px] sm:max-w-[90%] max-w-full w-full mx-auto md:pt-0 pt-10">
+                <form>
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full text-black-4000 border-b border-gray-7000 pb-2 p-0 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 focus:outline-0"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full text-black-4000 mt-10 border-b border-gray-7000 pb-2 p-0 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 focus:outline-0"
+                  />
+                  <div class="flex items-end justify-between mt-10 border-b border-gray-7000 pb-2">
+                    <label class="text-base font-normal text-black-4000">Available booking slots</label>
+                    <div class="flex items-center justify-end">
+                      <input id="date" type="text" class="bg-transparent border-0 focus:ring-0 w-[120px] p-0" />
+                      <img src="images/Calendar_Days.svg" class="date-icon" alt="" />
+                    </div>
+                  </div>
+                  <div class="mt-10 border-b border-gray-7000 pb-2 p-0">
+                    <select
+                      id="countries"
+                      class="bg-transparent border-0 w-full p-0 focus:ring-0 text-base font-normal text-black-4000"
+                    >
+                      <option selected>How often You want lessons?</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+                  <div class="mt-10 border-b border-gray-7000 pb-2 p-0">
+                    <select
+                      id="countries"
+                      class="bg-transparent border-0 w-full p-0 focus:ring-0 text-base font-normal text-black-4000"
+                    >
+                      <option selected>What times of day are good for You?</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+                  <div class="mt-10 border-b border-gray-7000 pb-2 p-0">
+                    <select
+                      id="countries"
+                      class="bg-transparent border-0 w-full p-0 focus:ring-0 text-base font-normal text-black-4000"
+                    >
+                      <option selected>Level of experience</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                    </select>
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Your Message"
+                    class="w-full text-gray-5000 border-b border-gray-7000 pb-5 p-0 mt-10 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 focus:outline-0"
+                  />
+                  <a
+                    href="#"
+                    class="bg-gray-2000 rounded py-4 px-5 mt-14 flex items-center justify-center text-base font-medium border sm:w-[185px] text-center w-full text-light-1000 hover:border hover:bg-gray-3000"
+                  >
+                    Request Now <span><img src="images/book-now-white.svg" class="inline-block" alt="" /></span
+                  ></a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-----BOOKING-SECTION----->
+      <section
+        class="lg:py-44 sm:py-20 py-14 relative after:absolute after:content-[''] after:bg-[url('../images/flower2.svg')] after:bg-contain after:bg-no-repeat md:after:w-[250px] sm:after:w-[250px] after:w-[150px] md:after:h-[300px] sm:after:h-[300px] after:h-[200px] after:-left-20 lg:after:top-28 after:top-10 after:-z-50"
+      >
+        <div class="max-w-[1370px] px-5 mx-auto">
+          <h2
+            class="lg:text-5xl md:text-4xl text-2xl text-black-2000 font-medium lg:leading-[60px] leading-none capitalize pb-7"
+          >
+            About The Booking
+          </h2>
+          <div
+            class="flex md:flex-nowrap flex-wrap md:flex-row flex-col-reverse items-start justify-between lg:gap-24 gap-0"
+          >
+            <div class="md:w-1/2 w-full">
+              <div>
+                <p class="text-base font-light text-black-3000 pb-10">
+                  Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nulla aliquet porttitor lacus luctus accumsan
+                  tortor posuere ac. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat
+                  vivamus. Consectetur adipiscing elit pellentesque habitant morbi tristique. Enim sit amet venenatis
+                  urna cursus eget nunc. Sit amet nisl purus in mollis nunc sed. Imperdiet nulla malesuada pellentesque
+                  elit eget gravida.
+                </p>
+                <p class="text-base font-light text-black-3000">
+                  Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Interdum varius sit amet mattis
+                  vulputate enim nulla. Nulla facilisi nullam vehicula ipsum a arcu. Ipsum dolor sit amet consectetur
+                  adipiscing elit pellentesque habitant morbi. Volutpat ac tincidunt vitae semper. Ac placerat
+                  vestibulum lectus mauris ultrices eros in cursus. Id ornare arcu odio ut.Ut morbi tincidunt augue
+                  interdum velit. Ultrices sagittis orci a scelerisque. Curabitur gravida arcu ac tortor dignissim
+                  convallis. A arcu cursus vitae congue mauris rhoncus aenean. Id velit ut tortor pretium viverra.
+                  Consectetur a erat nam at. Scelerisque eu ultrices vitae auctor eu augue. Dapibus ultrices in iaculis
+                  nunc sed augue lacus viverra vitae. Aliquam ut porttitor leo a diam sollicitudin tempor.Viverra vitae
+                  congue eu consequat ac felis.
+                </p>
+              </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+              <img src="images/contact-booking.png" class="w-full md:mb-0 mb-5" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-----TEACHER-SECTION----->
+      <section
+        class="md:pb-32 pb-10 z-50 relative md:after:block after:hidden after:absolute after:content-[''] after:bg-[url('../images/flowers.svg')] after:bg-no-repeat after:w-[350px] after:h-[400px] after:right-0 after:-top-28"
+      >
+        <div class="md:max-w-[1370px] px-5 mx-auto relative">
+          <div class="block lg:flex item-center items-center justify-between">
+            <div class="w-full">
+              <img
+                src="images/blog-teacher.png"
+                class="xl:max-w-[900px] lg:max-w-[700px] max-w-full xl:h-[530px] lg:h-[480px] h-auto"
+                alt="location"
+              />
+            </div>
+            <div class="w-full">
+              <div
+                class="location-box shadow-2xl bg-light-1000 rounded-md py-10 px-7 lg:max-w-[460px] md:max-w-[610px] max-w-[90%] mx-auto relative z-50 3xl:-ml-10 lg:-ml-28 xl:-ml-16 lg:-mt-0 sm:-mt-16 -mt-8"
+              >
+                <div class="flex item-center justify-start">
+                  <h4 class="text-black-3000 text-2xl font-normal capitalize">Sandra Bonetti</h4>
+                </div>
+                <div class="pb-4">
+                  <a href="#" class="text-gray-2000 text-base font-light hover:text-gray-3000">Your yoga instructor</a>
+                </div>
+
+                <p class="text-black-4000 text-base font-light pb-8">
+                  Nulla sit amet venenatis diam, vel pulvinar felis. Mauris quis mauris pellentesque, ultricies nulla
+                  hendrerit, mollis mauris. Vestibulum sodales dapibus quam, lacinia maximus nisl tempor eget. Quisque
+                  congue elit id massa lacinia, vel eleifend magna volutpat. Aliquam at justo faucibus, gravida urna in,
+                  tempus ex.
+                </p>
+                <a
+                  href="#"
+                  class="bg-gray-2000 rounded py-4 px-5 text-base font-medium border sm:w-[155px] w-full sm:inline-block block text-center text-light-1000 hover:border hover:bg-gray-3000"
+                >
+                  Book Now <span><img src="images/book-now-white.svg" class="inline-block" alt="" /></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-----FOOTER----->
+    <footer
+      class="footer -z-20 relative bg-[url('../images/footer-bg.png')] bg-no-repeat bg-center bg-light-1000 pt-24 pb-10 foot-bg after:absolute after:content-[''] after:bg-[url('../images/foot-after.svg')] after:bg-no-repeat sm:after:w-[270px] after:w-[150px] sm:after:h-[130px] after:h-[70px] sm:after:bg-cover after:bg-contain sm:after:right-[25%] after:right-0 after:-bottom-0 after:-z-10"
+    >
+      <div class="max-w-[1408px] px-5 mx-auto">
+        <div class="sm:flex-row flex flex-col items-center sm:gap-0 gap-10 justify-between">
+          <div>
+            <a href="#">
+              <img src="images/foot-logo.svg" alt="" />
+            </a>
+            <p class="text-black-1000 text-sm font-light capitalize sm:block hidden">©Copyright 2023 Vinyasa</p>
+          </div>
+          <ul class="sm:flex-row flex flex-col items-center justify-center">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-black-2000 text-base font-light capitalize active"
+                >Home</a
+              >
+            </li>
+            <li class="sm:pt-0 pt-6">
+              <a
+                href="blog.html"
+                class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                >Blog</a
+              >
+            </li>
+            <li class="sm:pt-0 pt-6">
+              <a
+                href="contact.html"
+                class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                >Contact
+              </a>
+            </li>
+          </ul>
+          <ul class="flex items-center justify-end sm:pt-0 pt-10">
+            <li>
+              <a href="#"><img src="images/insta.svg" alt="insta" /></a>
+            </li>
+            <li class="ml-6">
+              <a href="#"><img src="images/facebook.svg" alt="insta" /></a>
+            </li>
+            <li class="ml-6">
+              <a href="#"><img src="images/linkedin.svg" alt="insta" /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="text-black-1000 text-sm font-light capitalize sm:hidden block text-center pt-11">
+          ©Copyright 2023 Vinyasa
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Swiper JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      $(function () {
+        $("#date").datepicker({
+          dateFormat: "dd-M-yy",
+          minDate: 1,
+        });
+
+        $(".date-icon").on("click", function () {
+          $("#date").focus();
+        });
+      });
+    </script>
+  </body>
+</html>

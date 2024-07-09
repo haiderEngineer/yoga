@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Yoga</title>
+  </head>
+  <body class="relative -z-[9999]">
+    <header class="relative z-[9999]">
+      <nav class="bg-light-1000 relative w-full z-20 top-0 start-0 py-4 border-b border-[#CBD8DB]">
+        <div
+          class="md:max-w-[1408px] relative md:flex-row flex-row-reverse flex flex-wrap items-center justify-between md:mx-auto mr-auto p-4"
+        >
+          <div class="w-full flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 md:order-1 order-2">
+              <img src="images/logo.svg" class="sm:w-auto w-[80px]" alt="" />
+            </a>
+            <a href="#" class="text-black-2000 order-3 text-base font-normal capitalize md:block hidden">Italiano</a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:hidden">
+              <button
+                data-collapse-toggle="navbar-sticky"
+                type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-sticky"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img src="images/bars.svg" alt="" />
+              </button>
+            </div>
+            <div class="md:hidden block order-3">
+              <a href="#" class="text-black-2000 text-base font-normal capitalize md:hidden block">Italiano</a>
+            </div>
+            <div
+              class="items-center justify-between hidden md:flex absolute md:after:bg-none after:absolute after:content-[''] after:bg-[url('../images/flowers.svg')] after:bg-no-repeat after:w-[350px] after:h-[400px] after:right-0 after:top-5 after:z-50 md:order-1 bg-transparent text-center md:static md:w-auto left-0 w-full top-[70px]"
+              id="navbar-sticky"
+            >
+              <ul
+                class="flex flex-col relative p-4 md:p-0 md:pt-0 pt-32 mt-4 md:h-auto h-screen font-medium bg-light-1000 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
+              >
+                <li class="md:pb-0 pb-10 relative z-[5000]">
+                  <a href="index.html" class="block py-2 px-3 text-black-2000 text-base font-light capitalize active"
+                    >Home</a
+                  >
+                </li>
+                <li class="md:pb-0 pb-10 relative z-[5000]">
+                  <a
+                    href="blog.html"
+                    class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                    >Blog</a
+                  >
+                </li>
+                <li class="md:pb-0 pb-10 relative z-[5000]">
+                  <a
+                    href="contact.html"
+                    class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                    >Contact
+                  </a>
+                </li>
+              </ul>
+              <ul
+                class="flex z-[5000] items-center justify-end sm:pt-0 pt-10 absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-[70%] md:hidden"
+              >
+                <li>
+                  <a href="#"><img src="images/insta.svg" alt="insta" /></a>
+                </li>
+                <li class="ml-6">
+                  <a href="#"><img src="images/facebook.svg" alt="insta" /></a>
+                </li>
+                <li class="ml-6">
+                  <a href="#"><img src="images/linkedin.svg" alt="insta" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-----BLOG-SECTION----->
+    <div
+      class="md:pt-20 pt-14 relative bg-light-1000 -z-10 after:absolute after:content-[''] after:bg-[url('../images/flowers.svg')] after:bg-contain after:bg-no-repeat md:after:w-[250px] sm:after:w-[250px] after:w-[150px] md:after:h-[300px] sm:after:h-[300px] after:h-[200px] after:right-0 after:top-5 after:-z-10"
+    >
+      <div class="max-w-[1370px] px-5 mx-auto">
+        <h2
+          class="lg:text-5xl md:text-4xl text-2xl text-black-2000 font-medium lg:leading-[60px] leading-none capitalize sm:pb-12 pb-8"
+        >
+          Our blog
+        </h2>
+        <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-11">
+          <!-----LEFT-SECTION----->
+          <section class="md:max-w-[70%] max-w-full w-full md:order-1 order-2">
+            <div class="bg-light-1000 shadow-1xl relative">
+              <img src="images/blog.png" class="w-full" alt="" />
+              <div class="px-6">
+                <div class="flex items-center justify-between pt-10 pb-6 md:border-b border-0 border-[#e1e1e1]">
+                  <div class="flex items-center justify-start">
+                    <img src="images/elizbeth.png" alt="" />
+                    <div class="pl-3">
+                      <h5 class="text-black-3000 sm:text-base text-sm font-medium">Elizabeth Brown</h5>
+                      <p class="sm:text-sm text-xs text-gary-5000 font-normal">Dec 11 • 3 min read</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <div>
+                      <a href="#" class="flex items-center justify-start">
+                        <img src="images/blog-eye.svg" alt="" />
+                        <span class="text-gray-6000 text-xs font-normal pl-2">875</span>
+                      </a>
+                    </div>
+                    <div class="sm:pl-6 pl-3">
+                      <a href="#" class="flex items-center justify-start">
+                        <img src="images/blog-message.svg" alt="" />
+                        <span class="text-gray-6000 text-xs font-normal pl-2">3</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:pt-10 pt-5">
+                  <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold lg:pb-0 pb-5">
+                    Nulla sit amet venenatis
+                  </h4>
+                  <p class="text-black-4000 text-lg font-light md:pt-7 pt-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem. accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                    est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                    modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                    veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,tempus iaculis nisi ut.
+                  </p>
+                </div>
+                <div
+                  class="bg-green-1000 md:py-11 py-16 md:px-24 px-10 mb-8 md:my-0 my-6 rounded-xl relative after:absolute after:content-[''] after:bg-[url('../images/blog-dots.svg')] after:bg-no-repeat after:w-[30px] after:h-[25px] after:right-8 after:top-8"
+                >
+                  <p class="text-black-4000 text-lg font-light">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem. accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta.
+                  </p>
+                </div>
+                <p class="text-black-4000 text-lg font-light sm:pb-12 pb-10">
+                  Elementum eu facilisis sed odio morbi quis commodo odio aenean. Turpis egestas maecenas pharetra
+                  convallis. Eu volutpat odio facilisis mauris sit amet massa. Facilisi cras fermentum odio eu. Accumsan
+                  lacus vel facilisis volutpat est velit egestas. Donec ultrices tincidunt arcu non. Duis ultricies
+                  lacus sed turpis tincidunt id aliquet risus. Congue eu consequat ac felis. Rutrum tellus pellentesque
+                  eu tincidunt tortor aliquam nulla facilisi cras. Est placerat in egestas erat imperdiet sed. Magna
+                  fringilla urna porttitor rhoncus. Mattis pellentesque id nibh tortor id aliquet. Pellentesque
+                  dignissim enim sit amet venenatis urna cursus eget nunc. Faucibus ornare suspendisse sed nisi lacus
+                  sed viverra tels.
+                </p>
+                <div class="sm:pb-10 pb-5">
+                  <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold">Nurture your spirit</h4>
+                  <p class="text-black-4000 text-lg font-light pt-7">
+                    Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nulla aliquet porttitor lacus luctus
+                    accumsan tortor posuere ac. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis
+                    feugiat vivamus. Consectetur adipiscing elit pellentesque habitant morbi tristique. Enim sit amet
+                    venenatis urna cursus eget nunc. Sit amet nisl purus in mollis nunc sed. Imperdiet nulla malesuada
+                    pellentesque elit eget gravida.
+                  </p>
+                  <p class="text-black-4000 text-lg font-light sm:pt-12 pt-7">
+                    Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Interdum varius sit amet mattis
+                    vulputate enim nulla. Nulla facilisi nullam vehicula ipsum a arcu. Ipsum dolor sit amet consectetur
+                    adipiscing elit pellentesque habitant morbi. Volutpat ac tincidunt vitae semper. Ac placerat
+                    vestibulum lectus mauris ultrices eros in cursus. Id ornare arcu odio ut.Ut morbi tincidunt augue
+                    interdum velit. Ultrices sagittis orci a scelerisque. Curabitur gravida arcu ac tortor dignissim
+                    convallis. A arcu cursus vitae congue mauris rhoncus aenean. Id velit ut tortor pretium viverra.
+                    Consectetur a erat nam at. Scelerisque eu ultrices vitae auctor eu augue. Dapibus ultrices in
+                    iaculis nunc sed augue lacus viverra vitae. Aliquam ut porttitor leo a diam sollicitudin
+                    tempor.Viverra vitae congue eu consequat ac felis.
+                  </p>
+                </div>
+                <div>
+                  <img src="images/body-care.png" alt="" />
+                  <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold sm:pb-8 pb-5 sm:pt-12 pt-7">
+                    Take care of your body
+                  </h4>
+                  <p class="text-black-4000 text-lg font-light">
+                    Scelerisque eu ultrices vitae auctor eu augue ut lectus. Nulla aliquet porttitor lacus luctus
+                    accumsan tortor posuere ac. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis
+                    feugiat vivamus. Consectetur adipiscing elit pellentesque habitant morbi tristique. Enim sit amet
+                    venenatis urna cursus eget nunc. Sit amet nisl purus in mollis nunc sed. Imperdiet nulla malesuada
+                    pellentesque elit eget gravida.
+                  </p>
+                  <p class="text-black-4000 text-lg font-light sm:pt-12 pt-7">
+                    Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Interdum varius sit amet mattis
+                    vulputate enim nulla. Nulla facilisi nullam vehicula ipsum a arcu. Ipsum dolor sit amet consectetur
+                    adipiscing elit pellentesque habitant morbi. Volutpat ac tincidunt vitae semper. Ac placerat
+                    vestibulum lectus mauris ultrices eros in cursus. Id ornare arcu odio ut.Ut morbi tincidunt augue
+                    interdum velit. Ultrices sagittis orci a scelerisque. Curabitur gravida arcu ac tortor dignissim
+                    convallis. A arcu cursus vitae congue mauris rhoncus aenean. Id velit ut tortor pretium viverra.
+                    Consectetur a erat nam at. Scelerisque eu ultrices vitae auctor eu augue. Dapibus ultrices in
+                    iaculis nunc sed augue lacus viverra vitae. Aliquam ut porttitor leo a diam sollicitudin
+                    tempor.Viverra vitae congue eu consequat ac felis.
+                  </p>
+                  <div class="flex flex-wrap items-center justify-between py-10">
+                    <ul class="flex items-center justify-between gap-3 sm:pb-0 md:pb-0 pb-10">
+                      <li>
+                        <a
+                          href="#"
+                          class="bg-gray-2000 hover:bg-gray-3000 px-[5px] py-2 rounded text-light-1000 text-sm font-light"
+                          >Vinyasa</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="bg-gray-2000 hover:bg-gray-3000 px-[5px] py-2 rounded text-light-1000 text-sm font-light"
+                          >Meditation</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="bg-gray-2000 hover:bg-gray-3000 px-[5px] py-2 rounded text-light-1000 text-sm font-light"
+                          >Yoga</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="flex items-center justify-between gap-6">
+                      <li>
+                        <a href="#"><img src="images/insta.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="images/facebook.svg" alt="" /></a>
+                      </li>
+                      <li>
+                        <a href="#"><img src="images/linkedin.svg" alt="" /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute w-full sm:-bottom-[80px] -bottom-[60px] flex items-center justify-between">
+                <div>
+                  <a href="#" class="flex items-center justify-start">
+                    <img src="images/Arrow_Left_SM.svg" class="md:w-auto w-[35px]" alt="" />
+                    <span class="text-black-2000 md:text-lg text-base font-normal pl-1">Previous</span>
+                  </a>
+                </div>
+                <div>
+                  <a href="#" class="flex items-center justify-start">
+                    <span class="text-black-2000 md:text-lg text-base font-normal pr-1">Next</span
+                    ><img src="images/Arrow_right_SM.svg" class="md:w-auto w-[35px]" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="pb-6 border-b border-gray-8000 sm:pt-20 pt-14">
+                <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold pb-8 pt-12">Comments</h4>
+                <div class="flex items-center justify-start">
+                  <img src="images/blog-comment.png" alt="" />
+                  <div class="pl-3">
+                    <h5 class="text-black-3000 text-base font-medium">Kate Portman</h5>
+                    <p class="text-xs text-gray-9000 font-normal">Dec 12, 2023</p>
+                  </div>
+                </div>
+                <p class="text-base font-light text-black-3000 pt-4 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="text-sm font-normal text-gray-2000 hover:text-gray-3000">Reply</a>
+              </div>
+              <div class="pb-6 pt-6 border-b border-gray-8000">
+                <div class="flex items-center justify-start">
+                  <img src="images/blog-comment.png" alt="" />
+                  <div class="pl-3">
+                    <h5 class="text-black-3000 text-base font-medium">Kate Portman</h5>
+                    <p class="text-xs text-gray-9000 font-normal">Dec 12, 2023</p>
+                  </div>
+                </div>
+                <p class="text-base font-light text-black-3000 pt-4 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="text-sm font-normal text-gray-2000 hover:text-gray-3000">Reply</a>
+              </div>
+              <div class="pb-6 pt-6">
+                <div class="flex items-center justify-start">
+                  <img src="images/blog-comment.png" alt="" />
+                  <div class="pl-3">
+                    <h5 class="text-black-3000 text-base font-medium">Kate Portman</h5>
+                    <p class="text-xs text-gray-9000 font-normal">Dec 12, 2023</p>
+                  </div>
+                </div>
+                <p class="text-base font-light text-black-3000 pt-4 pb-5">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat.
+                </p>
+                <a href="#" class="text-sm font-normal text-gray-2000 hover:text-gray-3000">Reply</a>
+              </div>
+            </div>
+            <form>
+              <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold pb-8 md:pt-12 pt-5 capitalize">
+                Leave a Reply
+              </h4>
+              <div class="sm:flex block items-center justify-between gap-10">
+                <input
+                  type="text"
+                  placeholder="Your Name*"
+                  class="sm:w-1/2 w-full text-gray-5000 border-b border-gray-7000 pb-2 p-0 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 focus:outline-0"
+                />
+                <input
+                  type="email"
+                  placeholder="Your Email*"
+                  class="sm:w-1/2 w-full text-gray-5000 sm:mt-0 mt-8 border-b border-gray-7000 pb-2 p-0 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 focus:outline-0"
+                />
+              </div>
+              <div class="pb-8 sm:pt-10 mt-8">
+                <input
+                  type="text"
+                  placeholder="Comment"
+                  class="w-full text-gray-5000 border-b border-gray-7000 pb-2 p-0 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 focus:outline-0"
+                />
+              </div>
+
+              <div class="flex items-start justify-start pb-10">
+                <input type="checkbox" class="focus:ring-0 rounded bg-transparent mt-1" />
+                <label class="text-base font-light text-black-3000 pl-2 pt-0"
+                  >Save my name, email, and website in this browser for the next time I comment.
+                </label>
+              </div>
+              <a
+                href="#"
+                class="bg-gray-2000 rounded py-4 px-5 flex items-center justify-center text-base font-medium border sm:w-[185px] text-center w-full text-light-1000 hover:border hover:bg-gray-3000"
+              >
+                Post Comment <span><img src="images/book-now-white.svg" class="inline-block" alt="" /></span
+              ></a>
+            </form>
+          </section>
+
+          <!-----RIGHT-SECTION----->
+          <section class="md:max-w-[30%] max-w-full w-full relative z-[9999] md:order-2 order-1">
+            <div>
+              <form>
+                <label class="text-gray-2000 text-2xl font-medium pb-6">Search</label>
+                <div class="flex items-center justify-between border-b border-gray-7000 py-2">
+                  <input
+                    type="text"
+                    placeholder="Type here..."
+                    class="w-full text-gray-5000 text-base bg-transparent font-light placeholder:text-base placeholder:text-gray-5000 border-0 focus:ring-0 px-1 py-0"
+                  />
+                  <a href="#">
+                    <img src="images/Search.svg" alt="" />
+                  </a>
+                </div>
+              </form>
+              <div class="sm:py-14 py-10">
+                <h4 class="text-gray-2000 sm:text-2xl text-lg font-medium pb-6 capitalize">Categories</h4>
+                <ul>
+                  <li class="mb-5 text-black-4000 text-base font-normal capitalize flex items-center justify-between">
+                    <p>Basic Yoga</p>
+                    <span>(4)</span>
+                  </li>
+                  <li class="mb-5 text-black-4000 text-base font-normal capitalize flex items-center justify-between">
+                    <p>Meditation</p>
+                    <span>(3)</span>
+                  </li>
+                  <li class="text-black-4000 text-base font-normal capitalize flex items-center justify-between">
+                    <p>Yoga Tutorials</p>
+                    <span>(5)</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="text-gray-2000 sm:text-2xl text-lg font-medium pb-6 capitalize">Latest posts</h4>
+                <img src="images/blog-leatest.png" class="w-full" alt="" />
+                <div>
+                  <p class="text-black-3000 text-sm font-light py-[10px]">Dec 11, 2023</p>
+                  <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold lg:pb-0 pb-5">
+                    Nulla sit amet venenatis
+                  </h4>
+                </div>
+              </div>
+              <div class="pt-8">
+                <img src="images/blog-nulla.png" class="w-full" alt="" />
+                <div>
+                  <p class="text-black-3000 text-sm font-light py-[10px]">Dec 11, 2023</p>
+                  <h4 class="sm:text-2xl text-lg text-black-3000 font-semibold lg:pb-0 pb-5">
+                    Nulla sit amet venenatis
+                  </h4>
+                </div>
+              </div>
+              <div class="md:pt-14 sm:pt-10 pt-5">
+                <h4 class="text-gray-2000 sm:text-2xl text-lg font-medium pb-6 capitalize">Tags</h4>
+                <ul class="flex flex-wrap items-center justify-start gap-3 max-w-[270px] w-full">
+                  <li>
+                    <a
+                      href="#"
+                      class="bg-gray-2000 hover:bg-gray-3000 p-[5px] rounded text-light-1000 text-sm font-light"
+                      >Vinyasa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="bg-gray-2000 hover:bg-gray-3000 p-[5px] rounded text-light-1000 text-sm font-light"
+                      >Meditation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="bg-gray-2000 hover:bg-gray-3000 p-[5px] rounded text-light-1000 text-sm font-light"
+                      >Yoga</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="bg-gray-2000 hover:bg-gray-3000 p-[5px] rounded text-light-1000 text-sm font-light"
+                      >Tutorials</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="bg-gray-2000 hover:bg-gray-3000 p-[5px] rounded text-light-1000 text-sm font-light"
+                      >Healthy food</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="bg-gray-2000 hover:bg-gray-3000 p-[5px] rounded text-light-1000 text-sm font-light"
+                      >Mind</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-----TEACHER-SECTION----->
+      <section
+        class="md:pt-40 pt-20 md:pb-32 pb-10 z-50 relative md:after:block after:hidden after:absolute after:content-[''] after:bg-[url('../images/flowers.svg')] after:bg-no-repeat after:w-[350px] after:h-[400px] after:right-0 after:-top-10"
+      >
+        <div class="md:max-w-[1290px] px-5 mx-auto relative">
+          <div class="block lg:flex item-center items-center justify-between">
+            <div class="w-full">
+              <img
+                src="images/blog-teacher.png"
+                class="xl:max-w-[900px] lg:max-w-[700px] max-w-full xl:h-[530px] lg:h-[480px] h-auto"
+                alt="location"
+              />
+            </div>
+            <div class="w-full">
+              <div
+                class="location-box shadow-2xl bg-light-1000 rounded-md py-10 px-7 lg:max-w-[460px] md:max-w-[610px] max-w-[90%] mx-auto relative z-50 3xl:-ml-10 lg:-ml-28 xl:-ml-16 lg:-mt-0 sm:-mt-16 -mt-8"
+              >
+                <div class="flex item-center justify-start">
+                  <h4 class="text-black-3000 text-2xl font-normal capitalize">Sandra Bonetti</h4>
+                </div>
+                <div class="pb-4">
+                  <a href="#" class="text-gray-2000 text-base font-light hover:text-gray-3000">Your yoga instructor</a>
+                </div>
+
+                <p class="text-black-4000 text-base font-light pb-8">
+                  Nulla sit amet venenatis diam, vel pulvinar felis. Mauris quis mauris pellentesque, ultricies nulla
+                  hendrerit, mollis mauris. Vestibulum sodales dapibus quam, lacinia maximus nisl tempor eget. Quisque
+                  congue elit id massa lacinia, vel eleifend magna volutpat. Aliquam at justo faucibus, gravida urna in,
+                  tempus ex.
+                </p>
+                <a
+                  href="#"
+                  class="bg-gray-2000 rounded py-4 px-5 text-base font-medium border sm:w-[155px] w-full sm:inline-block block text-center text-light-1000 hover:border hover:bg-gray-3000"
+                >
+                  Book Now <span><img src="images/book-now-white.svg" class="inline-block" alt="" /></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-----FOOTER----->
+    <footer
+      class="footer -z-20 relative bg-[url('../images/footer-bg.png')] bg-no-repeat bg-center bg-light-1000 pt-24 pb-10 foot-bg after:absolute after:content-[''] after:bg-[url('../images/foot-after.svg')] after:bg-no-repeat sm:after:w-[270px] after:w-[150px] sm:after:h-[130px] after:h-[70px] sm:after:bg-cover after:bg-contain sm:after:right-[25%] after:right-0 after:-bottom-0 after:-z-10"
+    >
+      <div class="max-w-[1408px] px-5 mx-auto">
+        <div class="sm:flex-row flex flex-col items-center sm:gap-0 gap-10 justify-between">
+          <div>
+            <a href="#">
+              <img src="images/foot-logo.svg" alt="" />
+            </a>
+            <p class="text-black-1000 text-sm font-light capitalize sm:block hidden">©Copyright 2023 Vinyasa</p>
+          </div>
+          <ul class="sm:flex-row flex flex-col items-center justify-center">
+            <li>
+              <a href="index.html" class="block py-2 px-3 text-black-2000 text-base font-light capitalize active"
+                >Home</a
+              >
+            </li>
+            <li class="sm:pt-0 pt-6">
+              <a
+                href="blog.html"
+                class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                >Blog</a
+              >
+            </li>
+            <li class="sm:pt-0 pt-6">
+              <a
+                href="contact.html"
+                class="block py-2 px-3 text-black-1000 text-base font-light capitalize hover:text-black-2000"
+                >Contact
+              </a>
+            </li>
+          </ul>
+          <ul class="flex items-center justify-end sm:pt-0 pt-10">
+            <li>
+              <a href="#"><img src="images/insta.svg" alt="insta" /></a>
+            </li>
+            <li class="ml-6">
+              <a href="#"><img src="images/facebook.svg" alt="insta" /></a>
+            </li>
+            <li class="ml-6">
+              <a href="#"><img src="images/linkedin.svg" alt="insta" /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="text-black-1000 text-sm font-light capitalize sm:hidden block text-center pt-11">
+          ©Copyright 2023 Vinyasa
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper = new Swiper(".mySwiper3", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      <!-- Initialize Swiper -->
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          // when window width is >= 640px
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1100: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
